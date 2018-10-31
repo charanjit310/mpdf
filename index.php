@@ -9,6 +9,8 @@ require_once __DIR__ . '/vendor/autoload.php';
     $title = $_POST['title'];
     $link  = $_POST['link'];
 
+
+
     ob_start();
     require 'moviePdfHtml.php';
     $htmlFile = ob_get_clean();
